@@ -116,19 +116,29 @@ body{
 
 }
 
-.tdinfo{
+#translator{
 
-    position: absolute;
-    bottom: 30px;
-    left: 30px;
-    color: white;
-    font-family: 'Work Sans', sans-serif;
-    pointer-events: none;
+    background: url(icons/language-translator.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
 }
 
-#hour{
+#docs{
 
-    font-size: 70px;
+    background: url(icons/docs.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+#hangouts{
+
+    background: url(icons/hangouts.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
 }
