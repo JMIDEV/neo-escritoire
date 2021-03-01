@@ -1,0 +1,134 @@
+body{
+
+    background: url(olen-gandy-fTq8_cQ9gzI-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    user-select: none;
+
+}
+
+.icons{
+
+    margin-left: 30px;
+    margin-top: 50px;
+
+}
+
+.desktopicon{
+
+    width: 60px;
+    height: 60px;
+    border: 2px solid transparent;
+    outline: none;
+    transition: 0.3s;
+    display: inline-block;
+    vertical-align: text-top;
+    margin-bottom: 14px;
+    margin-right: 14px;
+
+}
+
+.desktopicon:hover{
+
+    opacity: 0.7;
+    cursor: hand;
+
+}
+
+.desktopicon:focus{
+
+    opacity: 0.4;
+    cursor: hand;
+
+}
+
+#settings{
+
+    background: url(icons/settings.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+#images{
+
+    background: url(icons/images.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+#calculator{
+
+    background: url(icons/calculator.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+#calendar{
+
+    background: url(icons/calendar.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+#camera{
+
+    background: url(icons/camera.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+#contacts{
+
+    background: url(icons/contacts.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+#email{
+
+    background: url(icons/email.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+#notes{
+
+    background: url(icons/notes.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.tdinfo{
+
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    pointer-events: none;
+
+}
+
+#hour{
+
+    font-size: 70px;
+
+}
