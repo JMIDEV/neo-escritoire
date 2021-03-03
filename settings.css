@@ -1,0 +1,63 @@
+body{
+
+    font-family: 'Work Sans', sans-serif;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 30px;
+
+}
+
+.bgselector{
+
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    column-count: 2;
+    column-gap: 33px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 5px 8px #00000025;
+
+}
+
+.bgitem{
+
+    width: 100%;
+    height: 200px;
+    display: block;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    box-shadow: 0px 5px 8px #00000044;
+    outline: none;
+    z-index: 3;
+    margin-bottom: 33px;
+
+}
+
+#bg_1{
+
+    background: url(Backgrounds/olen-gandy-fTq8_cQ9gzI-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: center;
+
+}
+
+#bg_2{
+
+    background: url(Backgrounds/tom-winckels-I7oLRdM9YIw-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: center;
+
+}
+
+#bg_3{
+
+    background: url(Backgrounds/denise-jans-lhbIscXhmp4-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: center;
+
+}
