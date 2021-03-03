@@ -45,7 +45,7 @@ body{
 
 }
 
-#settings{
+.settings{
 
     background: url(icons/settings.svg);
     background-size: cover;
@@ -54,7 +54,7 @@ body{
 
 }
 
-#images{
+.images{
 
     background: url(icons/images.svg);
     background-size: cover;
@@ -63,7 +63,7 @@ body{
 
 }
 
-#calculator{
+.calculator{
 
     background: url(icons/calculator.svg);
     background-size: cover;
@@ -72,7 +72,7 @@ body{
 
 }
 
-#calendar{
+.calendar{
 
     background: url(icons/calendar.svg);
     background-size: cover;
@@ -81,7 +81,7 @@ body{
 
 }
 
-#camera{
+.camera{
 
     background: url(icons/camera.svg);
     background-size: cover;
@@ -90,7 +90,7 @@ body{
 
 }
 
-#contacts{
+.contacts{
 
     background: url(icons/contacts.svg);
     background-size: cover;
@@ -99,7 +99,7 @@ body{
 
 }
 
-#email{
+.email{
 
     background: url(icons/email.svg);
     background-size: cover;
@@ -108,7 +108,7 @@ body{
 
 }
 
-#notes{
+.notes{
 
     background: url(icons/notes.svg);
     background-size: cover;
@@ -117,7 +117,7 @@ body{
 
 }
 
-#translator{
+.translator{
 
     background: url(icons/language-translator.svg);
     background-size: cover;
@@ -126,7 +126,7 @@ body{
 
 }
 
-#docs{
+.docs{
 
     background: url(icons/docs.svg);
     background-size: cover;
@@ -135,7 +135,7 @@ body{
 
 }
 
-#hangouts{
+.hangouts{
 
     background: url(icons/hangouts.svg);
     background-size: cover;
@@ -163,6 +163,8 @@ body{
     padding: 0px;
     overflow: hidden;
     display: none;
+    top: 47;
+    left: 160;
 
 }
 
