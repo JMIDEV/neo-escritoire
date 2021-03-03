@@ -13,6 +13,7 @@ body{
 
     margin-left: 30px;
     margin-top: 50px;
+    margin-bottom: 10px;
 
 }
 
@@ -23,10 +24,10 @@ body{
     border: 2px solid transparent;
     outline: none;
     transition: 0.3s;
-    display: inline-block;
-    vertical-align: text-top;
+    display: block;
     margin-bottom: 14px;
     margin-right: 14px;
+    position: relative;
 
 }
 
