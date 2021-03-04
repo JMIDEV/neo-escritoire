@@ -151,6 +151,15 @@ body{
 
 }
 
+.beepbox{
+
+    background: url(icons/beepbox.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
 
 
 
