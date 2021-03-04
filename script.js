@@ -55,3 +55,5 @@ dragElement(document.getElementById("window"));
             $(this).closest('.window').css('display', 'none');
         })
     });
+
+  //parabugs1

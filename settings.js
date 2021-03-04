@@ -38,3 +38,5 @@ function changeBG(bgnum){
     window.parent.checkBG();
 
 }
+
+//parabugs1
