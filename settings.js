@@ -1,4 +1,21 @@
 var BGselected = 0;
+lclstrgcod = window.localStorage;
+
+//lclstrgcod.clear();
+
+if(lclstrgcod.getItem("bgpref") == null){
+
+    BGselected = 0;
+
+}
+
+else{
+
+    BGselected = lclstrgcod.getItem("bgpref");
+
+}
+
+
 
 function checkBG(){
 
@@ -27,6 +44,7 @@ function checkBG(){
     $('#mainbody').css('background-size', "cover");
 
     console.log("hey");
+    console.log(lclstrgcod.getItem("bgpref"));
 
 }
 
@@ -35,8 +53,9 @@ checkBG();
 function changeBG(bgnum){
     
     window.parent.BGselected = bgnum;
+    lclstrgcod.setItem('bgpref', bgnum);
     window.parent.checkBG();
 
 }
 
-//parabugs3
+//parabugs4
