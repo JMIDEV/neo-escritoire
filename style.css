@@ -1,8 +1,8 @@
 body{
 
-    background: url("Backgrounds/olen-gandy-fTq8_cQ9gzI-unsplash.jpg");
+    /*background: url("Backgrounds/0.jpg");*/
     background-repeat: no-repeat;
-    background-position: center;
+    background-repeat: center;
     background-size: cover;
     overflow: hidden;
     user-select: none;
@@ -14,10 +14,11 @@ body{
     margin-left: 30px;
     margin-top: 50px;
     margin-bottom: 10px;
-    /*column-count: 2;
-    column-gap: -43px;
-    column-width: 0px;
-    width: 150px;*/
+    height: 90%;
+    width: min-content;
+    column-count: 2;
+    column-gap: 20px;
+    column-fill: auto;
 
 }
 
