@@ -37,7 +37,7 @@ function changeBG(bgnum){
 
 }
 
-//parabugs4
+//parabugs5
 
 /*if(BGselected == 0){
 
