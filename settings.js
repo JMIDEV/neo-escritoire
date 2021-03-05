@@ -15,13 +15,31 @@ else{
 
 }
 
-
-
 function checkBG(){
 
     $('#mainbody').css('background', "url('Backgrounds/" + BGselected + ".jpg')");
+    $('#mainbody').css('background-repeat', "no-repeat");
+    $('#mainbody').css('background-position', "center");
+    $('#mainbody').css('background-size', "cover");
     
-    /*if(BGselected == 0){
+    console.log("hey");
+    console.log(lclstrgcod.getItem("bgpref"));
+}
+
+checkBG();
+
+function changeBG(bgnum){
+    
+    window.parent.BGselected = bgnum;
+    lclstrgcod.setItem('bgpref', bgnum);
+    checkBG();
+    window.parent.checkBG();
+
+}
+
+//parabugs4
+
+/*if(BGselected == 0){
 
         $('#mainbody').css('background', "url('Backgrounds/0.jpg')");
 
@@ -38,24 +56,3 @@ function checkBG(){
         $('#mainbody').css('background', "url('Backgrounds/2.jpg')");
 
     }*/
-
-    $('#mainbody').css('background-repeat', "no-repeat");
-    $('#mainbody').css('background-position', "center");
-    $('#mainbody').css('background-size', "cover");
-
-    console.log("hey");
-    console.log(lclstrgcod.getItem("bgpref"));
-
-}
-
-checkBG();
-
-function changeBG(bgnum){
-    
-    window.parent.BGselected = bgnum;
-    lclstrgcod.setItem('bgpref', bgnum);
-    window.parent.checkBG();
-
-}
-
-//parabugs4
