@@ -1,3 +1,6 @@
+var conmen_selected_element;
+var classdivided;
+
 function openapp(appurl){
 
   document.getElementById("windowcontent").src = appurl;
@@ -56,4 +59,49 @@ dragElement(document.getElementById("window"));
         })
     });
 
-  //parabugs5
+
+
+function createcstmicon(name, url, image){
+
+  $("#customicons").append("<button class='desktopicon customicon " + name + "' id='desktopiconheader'><img src='" + image + "'></button>");
+  $("." + name).attr("onclick", "window.open('" + url + "')");
+
+}
+
+function showcstmcontextmen(){
+
+  var pattern = /(?:^|\s)customicon(?:\s|$)/
+  if (document.activeElement.className.match(pattern)) {
+  
+    conmen_selected_element = document.activeElement;
+    $('.contextmen').css("display", "inline");
+    $(".contextmen").css("transform","translate3d("+event.clientX+"px,"+event.clientY+"px,0px)");
+
+  }
+
+}
+
+window.oncontextmenu = function(){
+
+  showcstmcontextmen();
+  return false;
+
+}
+
+$('.contextmen').click(function() {
+  
+  classdivided = conmen_selected_element.className.split(/[ ,]+/);
+  $("." + classdivided[2]).remove();
+  $('.contextmen').css("display", "none");
+  savecustomicons();
+
+});
+
+$(document).click(function(event) { 
+  var $target = $(event.target);
+  if(!$target.closest('.contextmen').length) {
+    $('.contextmen').css("display", "none");
+  }        
+});
+
+//parabugs6

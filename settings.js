@@ -1,4 +1,5 @@
 var BGselected = 0;
+var IconsHaved;
 lclstrgcod = window.localStorage;
 
 //lclstrgcod.clear();
@@ -12,6 +13,12 @@ if(lclstrgcod.getItem("bgpref") == null){
 else{
 
     BGselected = lclstrgcod.getItem("bgpref");
+
+}
+
+if(lclstrgcod.getItem("cstmicons") != null){
+
+    $("#customicons").append(lclstrgcod.getItem("cstmicons"));
 
 }
 
@@ -36,8 +43,16 @@ function changeBG(bgnum){
     window.parent.checkBG();
 
 }
+//ar BillHtml = $('#up').html();
+function savecustomicons(){
 
-//parabugs5
+    console.log("working boi");
+    IconsHaved = $('#customicons').html();
+    lclstrgcod.setItem('cstmicons', IconsHaved);
+
+}
+
+//parabugs6
 
 /*if(BGselected == 0){
 

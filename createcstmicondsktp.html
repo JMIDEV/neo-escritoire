@@ -1,0 +1,37 @@
+<html>
+
+    <head>
+
+        <link href="crtcstm.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <h1>Create custom icon</h1>
+        <hr>
+        <h3>Name:</h3>
+        <input placeholder="Name of the icon (Required) e.g: Wikipedia" class="inptext namebox" id="namebox" type="text">
+        <h3>URL:</h3>
+        <input placeholder="Icon's website URL (Required) e.g: https://wikipedia.org/" class="inptext urlbox" id="urlbox" type="url">
+        <h3>Icon:</h3>
+        <input onclick="togglectsmimage()" type="checkbox" id="customicontoggle" class="customicontoggle" name="customicontoggle"><label for="customicontoggle">Custom image (icon)</label>
+        <input placeholder="URL (Will only work if checkbox is ticked) Use a custom icon image instead of the default automatical one." class="inptext cstmimage" id="cstmimage" type="url">
+        <h3>Preview:</h3>
+        <div class="iconviewer">
+
+            <button class="previewiconbg"><img id="imgprev" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOAAAADgCAMAAAAt85rTAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BMQEAAADCoPVPbQo/oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICXAcTgAAG6EJuyAAAAAElFTkSuQmCC"></button>
+
+        </div>
+        <button onclick="preparecreatingoficon();" class="crticonact">Create Icon</button>
+
+    </body>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="createcstm.js"></script>
+
+</html>
+
+<!--parabugs6-->

@@ -1,4 +1,4 @@
-/*parabugs5*/
+/*parabugs6*/
 
 body{
 
@@ -169,6 +169,32 @@ body{
 
 }
 
+.addcstm{
+
+    background: url(icons/addcustom.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+
+}
+
+.customicon{
+
+    background: url(icons/blankicon.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.customicon img{
+
+    width: 30px;
+
+}
+
+
 
 
 
@@ -238,5 +264,49 @@ body{
     width: 100%;
     height: 95%;
     border: 2px solid transparent;
+
+}
+
+
+
+
+
+
+
+
+.contextmen{
+
+    display: none;
+    position: absolute;
+    width: 200px;
+    height: auto;
+    background: white;
+    left: 0px;
+    top: 0px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.contextmen .cmenbutt{
+
+    width: 190px;
+    height: 40px;
+    background: white;
+    border: 0px solid transparent;
+    text-align: left;
+    font-family: 'Work Sans', sans-serif;
+    outline: none;
+    transition: 0.3s;
+    color: rgb(29, 29, 29);
+
+}
+
+.contextmen .cmenbutt:hover{
+
+    background: rgb(255, 77, 77);
+    color: white;
+    cursor: hand;
 
 }

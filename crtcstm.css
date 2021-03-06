@@ -1,0 +1,92 @@
+/*parabugs6*/
+
+body{
+
+    font-family: 'Work Sans', sans-serif;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 30px;
+
+}
+
+.iconviewer{
+
+    width: 100%;
+    height: auto;
+    background-color: rgb(238, 238, 238);
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 5px 8px #00000025;
+
+}
+
+.customicontoggle{
+
+    width: 30px;
+    margin-bottom: 30px;
+
+}
+
+.inptext{
+
+    width: 100%;
+    padding: 14px;
+    border: 2px solid transparent;
+    outline: none;
+    background: rgb(245, 245, 245);
+    border-radius: 20px;
+    font-family: 'Work Sans', sans-serif;
+    transition: 0.3s;
+
+}
+
+.inptext:hover{
+
+    background: rgb(231, 231, 231);
+    border-radius: 20px;
+
+}
+
+.previewiconbg{
+
+    width: 300px;
+    height: 300px;
+    background: url(icons/blankicon.svg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    outline: none;
+    border: 2px solid transparent;
+
+}
+
+.previewiconbg img{
+
+    width: 150px;
+
+}
+
+.crticonact{
+
+    margin-bottom: 45px;
+    margin-top: 45px;
+    width: 170px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background: rgb(0, 119, 255);
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+
+}
+
+.crticonact:hover{
+
+    background: rgb(0, 79, 226);
+    cursor: hand;
+
+}
