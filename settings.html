@@ -15,12 +15,16 @@
         <h2>Background:</h2>
         <div class="bgselector">
 
-            <button onclick="parent.changeBG(0)" class="bgitem" id="bg_0"></button>
-            <button onclick="parent.changeBG(1)" class="bgitem" id="bg_1"></button>
-            <button onclick="parent.changeBG(2)" class="bgitem" id="bg_2"></button>
-            <button onclick="parent.changeBG(3)" class="bgitem" id="bg_3"></button>
+            <button onclick="parent.changeBG('Backgrounds/0.jpg')" class="bgitem" id="bg_0"></button>
+            <button onclick="parent.changeBG('Backgrounds/1.jpg')" class="bgitem" id="bg_1"></button>
+            <button onclick="parent.changeBG('Backgrounds/2.jpg')" class="bgitem" id="bg_2"></button>
+            <button onclick="parent.changeBG('Backgrounds/3.jpg')" class="bgitem" id="bg_3"></button>
 
         </div>
+        <br>
+        <h1>Use custom background:</h1>
+        <input placeholder="URL of a custom backgound. e.g: ''https://website.com/image.png''" class="inptext cstmbgbox" id="cstmbgbox" type="text">
+        <button onclick="setcustomBG()" class="cstmbgact">Set custom background</button>
 
     </body>
     
@@ -29,4 +33,4 @@
 
 </html>
 
-<!--parabugs6-->
+<!--parabugs7-->

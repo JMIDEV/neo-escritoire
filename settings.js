@@ -1,4 +1,4 @@
-var BGselected = 0;
+var BGselected = "Backgrounds/0.jpg";
 var IconsHaved;
 lclstrgcod = window.localStorage;
 
@@ -6,13 +6,37 @@ lclstrgcod = window.localStorage;
 
 if(lclstrgcod.getItem("bgpref") == null){
 
-    BGselected = 0;
+    BGselected = "Backgrounds/0.jpg";
 
 }
 
 else{
 
     BGselected = lclstrgcod.getItem("bgpref");
+
+}
+
+if(lclstrgcod.getItem("bgpref") == 0){
+
+    lclstrgcod.setItem('bgpref', "Backgrounds/0.jpg");
+
+}
+
+else if(lclstrgcod.getItem("bgpref") == 0){
+
+    lclstrgcod.setItem('bgpref', "Backgrounds/0.jpg");
+
+}
+
+else if(lclstrgcod.getItem("bgpref") == 0){
+
+    lclstrgcod.setItem('bgpref', "Backgrounds/0.jpg");
+
+}
+
+else if(lclstrgcod.getItem("bgpref") == 0){
+
+    lclstrgcod.setItem('bgpref', "Backgrounds/0.jpg");
 
 }
 
@@ -24,7 +48,7 @@ if(lclstrgcod.getItem("cstmicons") != null){
 
 function checkBG(){
 
-    $('#mainbody').css('background', "url('Backgrounds/" + BGselected + ".jpg')");
+    $('#mainbody').css('background', "url('" + BGselected + "')");
     $('#mainbody').css('background-repeat', "no-repeat");
     $('#mainbody').css('background-position', "center");
     $('#mainbody').css('background-size', "cover");
@@ -35,10 +59,19 @@ function checkBG(){
 
 checkBG();
 
-function changeBG(bgnum){
+function changeBG(bg){
     
-    window.parent.BGselected = bgnum;
-    lclstrgcod.setItem('bgpref', bgnum);
+    window.parent.BGselected = bg;
+    lclstrgcod.setItem('bgpref', bg);
+    checkBG();
+    window.parent.checkBG();
+
+}
+
+function setcustomBG(){
+    
+    window.parent.BGselected = document.getElementById('cstmbgbox').value;
+    lclstrgcod.setItem('bgpref', document.getElementById('cstmbgbox').value);
     checkBG();
     window.parent.checkBG();
 
@@ -52,7 +85,7 @@ function savecustomicons(){
 
 }
 
-//parabugs6
+//parabugs7
 
 /*if(BGselected == 0){
 
