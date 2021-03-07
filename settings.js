@@ -18,25 +18,25 @@ else{
 
 if(lclstrgcod.getItem("bgpref") == 0){
 
-    lclstrgcod.setItem('bgpref', "Backgrounds/0.jpg");
+    changeBG('Backgrounds/0.jpg');
 
 }
 
-else if(lclstrgcod.getItem("bgpref") == 0){
+else if(lclstrgcod.getItem("bgpref") == 1){
 
-    lclstrgcod.setItem('bgpref', "Backgrounds/0.jpg");
-
-}
-
-else if(lclstrgcod.getItem("bgpref") == 0){
-
-    lclstrgcod.setItem('bgpref', "Backgrounds/0.jpg");
+    changeBG('Backgrounds/1.jpg');
 
 }
 
-else if(lclstrgcod.getItem("bgpref") == 0){
+else if(lclstrgcod.getItem("bgpref") == 2){
 
-    lclstrgcod.setItem('bgpref', "Backgrounds/0.jpg");
+    changeBG('Backgrounds/2.jpg');
+
+}
+
+else if(lclstrgcod.getItem("bgpref") == 3){
+
+    changeBG('Backgrounds/3.jpg');
 
 }
 
@@ -85,7 +85,7 @@ function savecustomicons(){
 
 }
 
-//parabugs7
+//parabugs8
 
 /*if(BGselected == 0){
 
