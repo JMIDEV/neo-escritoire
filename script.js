@@ -104,4 +104,11 @@ $(document).click(function(event) {
   }        
 });
 
-//parabugs8
+function searchingoogle(){
+
+  window.open("https://www.google.com/search?q=" + document.getElementById("searchbox").value);
+  $("#searchbox").removeAttr('value');
+
+}
+
+//parabugs9

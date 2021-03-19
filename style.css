@@ -1,8 +1,9 @@
-/*parabugs8*/
+/*parabugs9*/
 
 body{
 
     /*background: url("Backgrounds/0.jpg");*/
+    font-family: 'Work Sans', sans-serif;
     background-repeat: no-repeat;
     background-repeat: center;
     background-size: cover;
@@ -13,10 +14,12 @@ body{
 
 .icons{
 
+    position: absolute;
     margin-left: 30px;
     margin-top: 50px;
     margin-bottom: 10px;
-    height: 90%;
+    top: 0px;
+    bottom: 200px;
     width: min-content;
     column-count: 2;
     column-gap: 20px;
@@ -195,7 +198,88 @@ body{
 
 }
 
+.widgets_cdsk{
 
+    position: absolute;
+    left: 40px;
+    bottom: 50px;
+
+}
+
+.google_widget{
+    
+    width: 400px;
+    height: 130px;
+    background: rgba(255, 255, 255, 0.212);
+    backdrop-filter: blur(3px);
+    border-radius: 25px;
+    padding: 10px;
+    padding-left: 20px;
+    vertical-align: middle;
+    box-shadow: 0px 5px 8px #00000049;
+
+}
+
+.google_widget img{
+    
+    width: 80px;
+    vertical-align: middle;
+    justify-content: center;
+    margin-left: 5px;
+
+}
+
+.google_widget h2{
+    
+    vertical-align: middle;
+    color: rgba(255, 255, 255, 0.61);
+
+}
+
+.googleinp{
+
+    padding: 14px;
+    border: 2px solid transparent;
+    outline: none;
+    background: rgba(0, 0, 0, 0.295);
+    border-radius: 20px;
+    font-family: 'Work Sans', sans-serif;
+    transition: 0.3s;
+    font-size: 15px;
+    width: 300px;
+    box-shadow: 0px 5px 8px #00000023;
+    color: white;
+
+}
+
+.googleinp:hover{
+
+    background: rgb(34, 34, 34);
+
+}
+
+.googlego{
+    
+    width: 90px;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    background: rgb(0, 119, 255);
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+    box-shadow: 0px 5px 8px #00000023;
+
+}
+
+.googlego:hover{
+    
+    background: rgb(0, 79, 226);
+    cursor: hand;
+
+}
 
 
 
@@ -215,6 +299,7 @@ body{
     display: none;
     top: 47;
     left: 160;
+    z-index: 100;
 
 }
 
