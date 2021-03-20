@@ -111,4 +111,10 @@ function searchingoogle(){
 
 }
 
-//parabugs9
+document.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+    searchingoogle();
+  }
+});
+
+//parabugs0
