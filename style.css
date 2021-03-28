@@ -5,7 +5,7 @@ body{
     /*background: url("Backgrounds/0.jpg");*/
     font-family: 'Work Sans', sans-serif;
     background-repeat: no-repeat;
-    background-repeat: center;
+    background-position: center;
     background-size: cover;
     overflow: hidden;
     user-select: none;
