@@ -64,6 +64,7 @@ function preparecreatingoficon(){
             
             window.parent.createcstmicon(iconname, iconurl, iconimageurl);
             window.parent.savecustomicons();
+            window.parent.$('.crossclose').closest('.window').css('display', 'none');
 
         }
 
@@ -71,6 +72,7 @@ function preparecreatingoficon(){
 
             window.parent.createcstmicon(iconname, iconurl, iconimageurl);
             window.parent.savecustomicons();
+            window.parent.$('.crossclose').closest('.window').css('display', 'none');
 
         }
 
@@ -116,4 +118,4 @@ else{
 
 }
 
-//parabugs1
+//parabugs2

@@ -85,7 +85,7 @@ function savecustomicons(){
 
 }
 
-//parabugs1
+//parabugs2
 
 /*if(BGselected == 0){
 

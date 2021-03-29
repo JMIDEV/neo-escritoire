@@ -10,7 +10,7 @@ function openapp(appurl){
 
 //window_things
 
-dragElement(document.getElementById("window"));
+/*dragElement(document.getElementById("window"));
 
   function dragElement(elmnt) {
       var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
@@ -53,13 +53,51 @@ dragElement(document.getElementById("window"));
         }
       }
 
-    $(function(){
-        $('.crossclose').on('click',function(){
-            $(this).closest('.window').css('display', 'none');
-        })
-    });
+    
 
+*/
 
+$(function(){
+  $('.crossclose').on('click',function(){
+      $(this).closest('.window').css('display', 'none');
+  })
+});
+
+const el = document.querySelector(".window");
+
+el.addEventListener('mousedown', mousedown);
+
+function mousedown(e){
+
+  window.addEventListener('mousemove', mousemove);
+  window.addEventListener('mouseup', mouseup);
+
+  let prevX = e.clientX;
+  let prevY = e.clientY;
+  
+  function mousemove(e){
+
+    let newX = prevX - e.clientX;
+    let newY = prevY - e.clientY;
+
+    const rect = el.getBoundingClientRect();
+
+    el.style.left = rect.left - newX + "px";
+    el.style.top = rect.top - newY + "px";
+
+    prevX = e.clientX;
+    prevY = e.clientY;
+
+  }
+
+  function mouseup(){
+
+    window.removeEventListener("mousemove", mousemove);
+    window.removeEventListener("mouseup", mouseup);
+
+  }
+
+}
 
 function createcstmicon(name, url, image){
 
@@ -117,4 +155,4 @@ document.addEventListener("keyup", function(event) {
   }
 });
 
-//parabugs1
+//parabugs2
