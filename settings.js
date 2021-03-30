@@ -85,7 +85,68 @@ function savecustomicons(){
 
 }
 
-//parabugs3
+//first_welcome_page --------------------------------------------------------------
+
+var currentstepfirstpage = 1;
+var steps = document.querySelectorAll('.step');
+
+function checkcurrentstepoffp(){
+  
+  for(let step of steps){
+
+    if(step.id == "st" + currentstepfirstpage){
+
+      step.style.display = "inline";
+
+    }
+
+    else{
+
+      step.style.display = "none";
+
+    }
+
+  }
+  
+}
+
+function nextstepff(){
+
+  currentstepfirstpage += 1;
+  checkcurrentstepoffp();
+
+}
+
+function endsetupofthing(){
+
+    lclstrgcod.setItem('firstsetupdone', true);
+    location.reload();
+
+}
+
+function deletedonesetup(){
+
+    lclstrgcod.setItem('firstsetupdone', false);
+    location.reload();
+
+}
+
+if(lclstrgcod.getItem("firstsetupdone") == "true"){
+
+    document.getElementById("firstopenwelcome").style.display = "none";
+
+}
+
+else{
+
+    document.getElementById("firstopenwelcome").style.display = "inline";
+    
+}
+
+checkcurrentstepoffp();
+
+
+//parabugs4
 
 /*if(BGselected == 0){
 

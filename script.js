@@ -8,7 +8,7 @@ function openapp(appurl){
 
 }
 
-//window_things
+
 
 /*dragElement(document.getElementById("window"));
 
@@ -57,6 +57,8 @@ function openapp(appurl){
 
 */
 
+//window_things --------------------------------------------------------------
+
 $(function(){
   $('.crossclose').on('click',function(){
       $(this).closest('.window').css('display', 'none');
@@ -98,6 +100,8 @@ function mousedown(e){
   }
 
 }
+
+//cstm_icons --------------------------------------------------------------
 
 function createcstmicon(name, url, image){
 
@@ -142,6 +146,8 @@ $(document).click(function(event) {
   }        
 });
 
+//searching_google --------------------------------------------------------------
+
 function searchingoogle(){
 
   window.open("https://www.google.com/search?q=" + document.getElementById("searchbox").value);
@@ -155,4 +161,4 @@ document.addEventListener("keyup", function(event) {
   }
 });
 
-//parabugs3
+//parabugs4
