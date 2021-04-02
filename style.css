@@ -155,6 +155,15 @@ body{
 
 }
 
+.terminal{
+
+    background: url(icons/terminal.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
 .beepbox{
 
     background: url(icons/beepbox.svg);

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://brython.info/console.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Brython">
+    <meta name="author" content="Pierre Quentel">
+    <meta name="keywords" content="Python, Brython">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Brython interactive mode</title>
+    <link rel="icon" type="image/png" href="http://brython.info/favicon.png">
+    <noscript>Please enable Javascript to view this page correctly.</noscript>
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="./Brython interactive mode_files/brython.css">
+
+    <script src="./Brython interactive mode_files/brython.js.descarga"></script>
+    <script src="./Brython interactive mode_files/brython_stdlib.js.descarga"></script>
+
+    <style>
+    .codearea {
+        background: linear-gradient(0deg, rgb(22, 21, 41) 0%, rgb(56, 53, 92)100%);
+        color:rgb(187, 247, 255);
+        font-size: 14px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        user-select: none;
+        outline: none;
+        font-family: 'JetBrains Mono', monospace;
+
+    }
+
+    body{
+
+        overflow: hidden;
+        user-select: none;
+        margin: 0px;
+
+    }
+
+    </style>
+</head>
+
+
+<body onload="brython(1)">
+    <table id="banner" cellpadding="0" cellspacing="0">
+        <tbody><tr id="banner_row"></tr>
+    </tbody></table>
+
+    <textarea id="code" class="codearea" rows="20" cols="80"></textarea>
+
+    <script type="text/python3">
+  from interpreter import Interpreter
+
+  # open REPL in textarea with id "code"
+  Interpreter("code")
+  </script>
+
+
+
+
+<style id="brython-interpreter">
+.brython-interpreter {
+    background-color: #000;
+    color: #fff;
+    font-family: consolas, courier;
+}
+</style></body></html>
