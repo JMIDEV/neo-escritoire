@@ -500,7 +500,7 @@ body{
 
 .firstlogo{
 
-    width: 300px;
+    width: 30vh;
     margin-bottom: 30px;
     animation-name: titlefirstwlcm;
     animation-duration: 1s;
@@ -509,7 +509,7 @@ body{
 
 .firstappicons{
 
-    width: 120px;
+    width: 10vh;
     animation-name: iconsfirstwlcm;
     animation-duration: 1s;
 
@@ -528,7 +528,7 @@ body{
 
     margin-top: 30px;
     color: white;
-    font-size: 30px;
+    font-size: 3vh;
 
 }
 
@@ -537,12 +537,19 @@ body{
     background: white;
     border: 2px solid transparent;
     padding: 20px;
-    font-size: 20px;
+    font-size: 3vh;
     border-radius: 200px;
     font-family: 'Work Sans', sans-serif;
     color: rgb(0, 71, 129);
     outline: none;
     transition: 0.2s;
+
+}
+
+.presentationh1title{
+
+    font-size: 5vh; color: white;
+
 
 }
 
@@ -568,7 +575,7 @@ body{
 
 .bgpresentat{
 
-    width: 300px;
+    width: 32vh;
     border: 0px solid transparent;
     border-radius: 40px;
     box-shadow: 0px 5px 8px #00000044;
@@ -581,7 +588,7 @@ body{
 
 .iconspresentat{
 
-    width: 600px;
+    width: 50vh;
     border: 0px solid transparent;
     border-radius: 40px;
     box-shadow: 0px 5px 8px #00000044;
